@@ -1,0 +1,11 @@
+@use '@carbon/react';
+@use '@/components/UCCHeader/ucc-header';
+@use '@/app/home/landing-page';
+@use '@/app/repos/repo-page';
+
+@media (min-width: 42rem) {
+  .cds--grid--no-gutter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
