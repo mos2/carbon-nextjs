@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b19e79f-54ba-4f85-830a-45c1d930e987" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/home/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/home/_overrides.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/repos/RepoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/_landing-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/repos/_repo-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/repos/_repo-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/repos/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/repos/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YAjLNGufDVYlt52pPszSBBx8qB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michael/dev/personal/carbon-nextjs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b19e79f-54ba-4f85-830a-45c1d930e987" name="Changes" comment="" />
+      <created>1699975221021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699975221021</updated>
+      <workItem from="1699975222366" duration="2579000" />
+      <workItem from="1700048433850" duration="598000" />
+      <workItem from="1700253211049" duration="1494000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
