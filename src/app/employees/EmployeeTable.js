@@ -15,7 +15,7 @@ import {
   TableExpandedRow,
 } from '@carbon/react';
 
-const RepoTable = ({ rows, headers }) => {
+const EmployeeTable = ({ rows, headers }) => {
   return (
     <DataTable
       rows={rows}
@@ -27,14 +27,10 @@ const RepoTable = ({ rows, headers }) => {
         getRowProps,
         getTableProps,
       }) => (
-        <TableContainer
-          title="Carbon Repositories"
-          description="A collection of public Carbon repositories."
-        >
+        <TableContainer title="Employees" description="The APIC team members.">
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
-                <TableExpandHeader />
                 {headers.map((header) => (
                   <TableHeader key={header.key} {...getHeaderProps({ header })}>
                     {header.header}
@@ -45,14 +41,11 @@ const RepoTable = ({ rows, headers }) => {
             <TableBody>
               {rows.map((row) => (
                 <React.Fragment key={row.id}>
-                  <TableExpandRow {...getRowProps({ row })}>
+                  <TableRow {...getRowProps({ row })}>
                     {row.cells.map((cell) => (
                       <TableCell key={cell.id}>{cell.value}</TableCell>
                     ))}
-                  </TableExpandRow>
-                  <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
-                  </TableExpandedRow>
+                  </TableRow>
                 </React.Fragment>
               ))}
             </TableBody>
@@ -63,4 +56,4 @@ const RepoTable = ({ rows, headers }) => {
   );
 };
 
-export default RepoTable;
+export default EmployeeTable;
