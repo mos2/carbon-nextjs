@@ -8,6 +8,7 @@ import { Octokit } from '@octokit/core';
 const octokitClient = new Octokit({});
 
 import axios from 'axios';
+import process from 'next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss';
 
 const headers = [
   {
@@ -24,6 +25,10 @@ const headers = [
   },
 ];
 
+const EMPLOYEE_SERVER_URL =
+  'http://users-service-go.ucc.svc.cluster.local:8080';
+const EMPLOYEES_PATH = '/employees';
+
 function RepoPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
@@ -32,23 +37,31 @@ function RepoPage() {
   useEffect(() => {
     async function getEmployees() {
       axios
-        .get('http://localhost:8080/employees')
+        .get(EMPLOYEE_SERVER_URL + EMPLOYEES_PATH)
         .then(function (res) {
-          // handle success
           console.log(res);
           setRows(getRowItems(res.data.employees));
         })
         .catch(function (error) {
-          // handle error
           console.log(error);
+          setError('Error obtaining employees data');
         })
         .finally(function () {
           console.log('Done fetching');
+          setLoading(false);
         });
     }
 
     getEmployees();
   }, []);
+
+  if (loading) {
+    return 'Loading...';
+  }
+
+  if (error) {
+    return `Error! ${error}`;
+  }
 
   return (
     <Grid className="repo-page">
