@@ -4,11 +4,16 @@ import EmployeeTable from './EmployeeTable';
 import { Column, Grid } from '@carbon/react';
 import React, { useEffect, useState } from 'react';
 import { Octokit } from '@octokit/core';
+import { Agent } from 'https';
 
 const octokitClient = new Octokit({});
 
 import axios from 'axios';
-import process from 'next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss';
+const axiosClient = axios.create({
+  httpsAgent: new Agent({
+    rejectUnauthorized: false,
+  }),
+});
 
 const headers = [
   {
@@ -23,10 +28,13 @@ const headers = [
     key: 'role',
     header: 'Role',
   },
+  {
+    key: 'projects',
+    header: 'Projects',
+  },
 ];
 
-const EMPLOYEE_SERVER_URL =
-  'https://users-service-go-ucc.apps.o1-373093.cp.fyre.ibm.com';
+const EMPLOYEE_SERVER_URL = 'http://localhost:8080';
 const EMPLOYEES_PATH = '/employees';
 
 function RepoPage() {
@@ -36,7 +44,7 @@ function RepoPage() {
 
   useEffect(() => {
     async function getEmployees() {
-      axios
+      axiosClient
         .get(EMPLOYEE_SERVER_URL + EMPLOYEES_PATH)
         .then(function (res) {
           console.log(res);
@@ -78,6 +86,7 @@ const getRowItems = (rows) =>
     id: row.id,
     name: row.name,
     role: row.role,
+    projects: row.projects,
   }));
 
 export default RepoPage;
