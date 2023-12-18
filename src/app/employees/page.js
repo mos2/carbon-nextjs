@@ -35,7 +35,7 @@ const headers = [
 ];
 
 const EMPLOYEE_SERVER_URL =
-  'https://users-service-go-ucc.apps.o1-385186.cp.fyre.ibm.com/employees';
+  'https://users-service-go-ucc.apps.o1-385186.cp.fyre.ibm.com';
 const EMPLOYEES_PATH = '/employees';
 
 function RepoPage() {
